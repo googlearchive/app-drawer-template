@@ -1,0 +1,9 @@
+{
+  "main": "index.html",
+  "shell": "src/my-app.html",
+  "entrypoints": [
+    "src/my-view1.html",
+    "src/my-view2.html",
+    "src/my-view3.html"
+  ]
+}
