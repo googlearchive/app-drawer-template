@@ -27,6 +27,7 @@ Install [polymer-cli](https://github.com/Polymer/polymer-cli):
 ##### Initialize project from template
 
     polymer init app-drawer-template
+    cd app-drawer-template
 
 ### Start the development server
 
