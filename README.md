@@ -1,10 +1,13 @@
-# Polymer App Toolbox - Demo template for PRPL pattern
+# Polymer App Toolbox - Drawer Template
 
-This template, along with the `polymer-cli` toolchain, demonstrates use of the
-"PRPL pattern."  This pattern allows fast first delivery and interaction of the
-content at the initial route requested by the user, along with fast subsequent
+This template is a starting point for building apps using a drawer-based
+layout.  The layout is provided by `app-layout` elements.
+
+This template, along with the `polymer-cli` toolchain, also demonstrates use
+of the "PRPL pattern" This pattern allows fast first delivery and interaction with
+the content at the initial route requested by the user, along with fast subsequent
 navigation by pre-caching the remaining components required by the app and
-progressively loading them on demand as the user navigates through the app.
+progressively loading them on-demand as the user navigates through the app.
 
 The PRPL pattern, in a nutshell:
 
@@ -21,11 +24,9 @@ Install [polymer-cli](https://github.com/Polymer/polymer-cli):
 
     npm install -g polymer-cli
 
-##### Setup
+##### Initialize project from template
 
-    git clone https://github.com/PolymerLabs/app-toolbox.git
-    cd app-toolbox
-    bower install
+    polymer init app-drawer-template
 
 ### Start the development server
 
