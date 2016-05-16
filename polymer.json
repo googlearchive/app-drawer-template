@@ -1,7 +1,7 @@
 {
-  "main": "index.html",
+  "entrypoint": "index.html",
   "shell": "src/my-app.html",
-  "entrypoints": [
+  "fragments": [
     "src/my-view1.html",
     "src/my-view2.html",
     "src/my-view3.html"
