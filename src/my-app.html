@@ -74,7 +74,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <!-- Drawer content -->
       <app-drawer>
         <app-toolbar>Menu</app-toolbar>
-        <iron-selector role="navigation" class="drawer-list" attr-for-selected="name" selected="[[page]]">
+        <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="/view1">View One</a>
           <a name="view2" href="/view2">View Two</a>
           <a name="view3" href="/view3">View Three</a>
@@ -91,10 +91,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </app-toolbar>
         </app-header>
 
-        <iron-pages role="main" selected="[[page]]" attr-for-selected="name" selected-attribute="visible">
-          <my-view1 name="view1" route="[[subroute]]"></my-view1>
-          <my-view2 name="view2" route="[[subroute]]"></my-view2>
-          <my-view3 name="view3" route="[[subroute]]"></my-view3>
+        <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
+          <my-view1 name="view1"></my-view1>
+          <my-view2 name="view2"></my-view2>
+          <my-view3 name="view3"></my-view3>
         </iron-pages>
 
       </app-header-layout>
@@ -128,11 +128,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       },
 
       _pageChanged: function(page) {
-        if (page != null) {
-          // load page import on demand.
-          this.importHref(
-            this.resolveUrl('my-' + page + '.html'), null, null, true);
-        }
+        // load page import on demand.
+        this.importHref(
+          this.resolveUrl('my-' + page + '.html'), null, null, true);
       }
 
     });
