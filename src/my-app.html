@@ -20,6 +20,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 <link rel="import" href="my-icons.html">
+<link rel="import" href="my-404.html">
 
 <dom-module id="my-app">
 
@@ -91,10 +92,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </app-toolbar>
         </app-header>
 
-        <iron-pages role="main" selected="[[page]]" attr-for-selected="name">
+        <iron-pages role="main" selected="[[page]]" attr-for-selected="name" fallback-selection="404">
           <my-view1 name="view1"></my-view1>
           <my-view2 name="view2"></my-view2>
           <my-view3 name="view3"></my-view3>
+          <my-404 name="404" page="[[page]]"></my-404>
         </iron-pages>
 
       </app-header-layout>
