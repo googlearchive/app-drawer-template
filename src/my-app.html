@@ -7,6 +7,7 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
+
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/app-route/app-location.html">
 <link rel="import" href="../bower_components/app-route/app-route.html">
@@ -22,11 +23,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="my-icons.html">
 
 <dom-module id="my-app">
-
   <template>
-
     <style>
-
       :host {
         display: block;
         --app-primary-color: #4285f4;
@@ -44,6 +42,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .drawer-list {
         margin: 0 20px;
       }
+
       .drawer-list a {
         display: block;
         padding: 0 16px;
@@ -51,15 +50,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-decoration: none;
         color: var(--app-secondary-color);
       }
+
       .drawer-list a.iron-selected {
         color: black;
         font-weight: bold;
       }
+
       .drawer-list a.subroute {
         padding-left: 32px;
       }
-
-
     </style>
 
     <app-location route="{{route}}"></app-location>
@@ -70,7 +69,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         tail="{{subroute}}"></app-route>
 
     <app-drawer-layout fullbleed>
-
       <!-- Drawer content -->
       <app-drawer>
         <app-toolbar>Menu</app-toolbar>
@@ -96,27 +94,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <my-view2 name="view2"></my-view2>
           <my-view3 name="view3"></my-view3>
         </iron-pages>
-
       </app-header-layout>
-
     </app-drawer-layout>
-
   </template>
 
   <script>
-
     Polymer({
-
       is: 'my-app',
 
       properties: {
-
         page: {
           type: String,
           reflectToAttribute: true,
           observer: '_pageChanged'
-        },
-
+        }
       },
 
       observers: [
@@ -134,7 +125,5 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
     });
-
   </script>
-
 </dom-module>
