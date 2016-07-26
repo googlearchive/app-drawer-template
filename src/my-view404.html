@@ -8,22 +8,22 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+<link rel="import" href="../bower_components/polymer/polymer.html">
 
-    <title>Tests</title>
+<dom-module id="my-view404">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
 
-    <script src="../bower_components/web-component-tester/browser.js"></script>
-  </head>
-  <body>
-    <script>
-      WCT.loadSuites([
-        'my-view1.html?dom=shady',
-        'my-view1.html?dom=shadow'
-      ]);
-    </script>
-  </body>
-</html>
+    Oops you hit a 404. <a href="/">Head back to home.</a>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view404'
+    });
+  </script>
+</dom-module>
