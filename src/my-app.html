@@ -119,11 +119,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       },
 
       _pageChanged: function(page) {
-        // load page import on demand.
-        this.importHref(
-          this.resolveUrl('my-' + page + '.html'), null, null, true);
+        // Load page import on demand
+        var resolvedPageUrl = this.resolveUrl('my-' + page + '.html')
+        this.importHref(resolvedPageUrl, null, null, true);
       }
-
     });
   </script>
 </dom-module>
