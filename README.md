@@ -1,5 +1,15 @@
 # Polymer App Toolbox - Drawer Template
 
+## !!! We've moved !!!
+
+This project has been merged into the 
+[Polymer Starter Kit](https://github.com/polymerelements/polymer-starter-kit) 
+effort. If you want to get up and running we recommend you use PSK. We're
+keeping this repo here for now in case anyone is currently depending on it
+but we plan to remove it in the near future.
+
+### Intro
+
 This template is a starting point for building apps using a drawer-based
 layout.  The layout is provided by `app-layout` elements.
 
@@ -71,5 +81,3 @@ of the application.  Each new demand-loaded fragment should be added to the
 list of `fragments` in the included `polymer.json` file.  This will ensure
 those components and their dependencies are added to the list of pre-cached
 components (and will have bundles created in the fallback `bundled` build).
-
-
